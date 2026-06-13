@@ -1,12 +1,12 @@
-#MOOC.fi Python Programming Solutions
+# MOOC.fi Python Programming Solutions
 
 My solutions to the University of Helsinki Python Programming exercises.
 
-##Progress 
--[x] Part 1 
--[x] Part 2 
--[] Part 3 (in progress) 
--[] Part 4 
--[] Part 5 
--[] Part 6 
--[] Part 7
+## Progress 
+- [x] Part 1 
+- [x] Part 2 
+- [] Part 3 (in progress) 
+- [] Part 4 
+- [] Part 5 
+- [] Part 6 
+- [] Part 7
