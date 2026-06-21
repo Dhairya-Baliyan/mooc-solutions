@@ -8,5 +8,5 @@ My solutions to the University of Helsinki Python Programming exercises.
 - [x] Part 3 
 - [x] Part 4 
 - [x] Part 5 
-- [] Part 6 (in progress)
-- [] Part 7
+- [x] Part 6 
+- [x] Part 7
