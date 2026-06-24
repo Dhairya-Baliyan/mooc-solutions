@@ -1,0 +1,175 @@
+Part 1: Basics & I/O
+1. print():
+-->Outputs data to the console.
+
+2. input("Prompt: "):
+-->Pauses execution to accept user typing. 
+-->Always returns a string.
+
+3. Type Casting: 
+-->Converts data types. 
+-->Use int() for whole numbers, 
+-->float() for decimals, 
+-->and str() for text.
+
+4. F-strings: 
+-->The modern way to format text. 
+-->Prefix the string with f and insert variables directly. 
+-->Example: print(f"Uploading {video_title} to @silentsemesters").
+
+5. Math Operators:
+-->+, -, *, 
+-->/ (float division), 
+-->// (integer/floor division), 
+-->% (modulo/remainder), 
+-->%(exponentiation).
+
+
+
+Part 2: Conditionals & While Loops
+1. Comparison Operators: 
+-->== (equals), 
+-->!= (not equals), >, <, >=, <=. 
+-->These evaluate to True or False.
+
+2. Logical Operators: 
+-->and (both must be true),
+-->or (one must be true), 
+-->not (inverts the truth).
+
+3. if / elif / else: 
+-->Executes blocks of code based on conditions. 
+-->Python relies entirely on indentation (4 spaces) to define these blocks.
+
+4. while Loops: 
+-->Repeats a block of code as long as a condition remains True.
+
+5. Loop Control: 
+-->break instantly shatters the loop and exits. 
+-->continue instantly skips the rest of the current cycle and jumps back to the top of the loop.
+
+
+Part 3: Strings & Lists
+1. String Methods: .upper(),
+-->.lower(), 
+-->.strip() (removes leading/trailing whitespace), 
+-->.split(",") (cuts a string into a list based on a separator). 
+-->Strings are immutable (cannot be changed in place).
+
+2. Slicing [start:stop:step]: 
+-->Extracts sections of strings or lists.
+-->Example: word[::-1] reverses it.
+
+3. Lists []: Ordered, mutable collections of data. 
+-->Example: loadout = ["Carving Sword", "Hellion Jacket", "Energy Shaper"].
+
+4. List Operations:
+
+-->.append(x): Adds x to the end.
+
+-->.insert(index, x): Squeezes x into a specific spot.
+
+-->.pop(index): Removes and returns an item (defaults to the last item).
+
+--> x in my_list: Checks if an item exists (evaluates to True or False).
+
+--> len(my_list): Returns the number of items.
+
+
+Part 4: Functions & For Loops
+1. Defining Functions: 
+-->Use def my_function(parameters):.
+
+2. return Statement: 
+-->Exits the function and passes data back to whatever called it. 
+-->Without return, a function evaluates to None.
+
+3. for Loops: 
+-->Iterates sequentially through any collection (list, string, dictionary). 
+-->Example: for item in loadout:.
+
+4. range(start, stop, step): 
+-->Generates a sequence of numbers. 
+-->for i in range(5): loops exactly 5 times (0 through 4).
+
+
+Part 5: Dictionaries, Tuples & References
+1. Dictionaries {}: 
+-->Stores data in paired key: value relationships. 
+-->Keys must be unique and immutable (like strings). 
+-->Example: laptop = {"cpu": "i5 11th Gen", "gpu": "GTX 1650", "ram": 8}.
+
+2. Dictionary Methods: 
+-->.keys() returns all keys, 
+-->.values() returns all values, 
+-->.items() returns (key, value) pairs for looping.
+
+3. Tuples (): 
+-->Exactly like lists, 
+-->but immutable. 
+-->You cannot append or change them once created.
+
+4. References vs. Values: 
+-->Assigning a list/dict to a new variable (list_b = list_a) creates a reference, not a copy. 
+-->Changing list_b will change list_a. Use list_b = list_a.copy() to clone it safely.
+
+
+Part 6: File Handling
+1. The Context Manager (with):
+-->The only acceptable way to open files.
+-->It guarantees the file closes even if your code crashes.
+
+2. Modes: "r" (read), "w" (write/overwrite entirely), "a" (append to the end).
+
+3. Syntax: with open("data.txt", "r") as file:
+
+4. Reading Methods: 
+-->file.read() returns one massive string. 
+-->Iterating for line in file: reads it memory-efficiently line-by-line.
+
+**Stripping Newlines: When reading text files, lines end with invisible \n characters. Always use line.strip() to clean them.
+
+Part 7: Modules & Exceptions
+Exceptions (try / except): 
+Prevents crashes from unpredictable data.
+Wrap risky code in try:, and handle the error in except ValueError:.
+
+Importing: 
+Brings in outside code. import math requires calling math.sqrt(9). 
+from math import sqrt allows calling sqrt(9) directly.
+
+Standard built-ins: math (complex math), random (random.randint(1, 10) or random.choice(my_list)).
+
+
+**Important Modules
+These are standard library modules (no installation required) and third-party tools that are mandatory knowledge for production software development.
+
+* json: Translates Python dictionaries into text format (and vice versa) for web APIs and configuration files.
+
+* json.dumps(dict) converts Python to JSON string.
+
+* json.loads(string) converts JSON string to Python.
+
+* pathlib: The modern, bulletproof way to handle file paths across Windows, Mac, and Linux.
+
+* from pathlib import Path
+
+* Path("my_folder").mkdir(exist_ok=True) creates a directory safely.
+
+* collections: Advanced data structures.
+
+* from collections import Counter
+
+* Counter(["apple", "apple", "pear"]) instantly counts item frequencies.
+
+* datetime: The only reliable way to handle time, dates, and durations.
+
+* from datetime import datetime
+
+* datetime.now() captures the exact current time.
+
+* requests (Requires pip install requests): The industry standard for fetching data from the internet.
+
+* import requests
+
+* response = requests.get("[https://api.github.com](https://api.github.com)") fetches data from a URL.
