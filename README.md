@@ -10,9 +10,9 @@ My solutions to the University of Helsinki Python Programming exercises.
 - [x] Part 5 
 - [x] Part 6 
 - [x] Part 7
-- [] Part 8 (in progress)
-- [] Part 9
-- [] Part 10
+- [x] Part 8 
+- [x] Part 9
+- [] Part 10 (in progress)
 - [] Part 11
 - [] Part 12
 - [] Part 13
