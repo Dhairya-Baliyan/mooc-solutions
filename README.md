@@ -12,8 +12,8 @@ My solutions to the University of Helsinki Python Programming exercises.
 - [x] Part 7
 - [x] Part 8 
 - [x] Part 9
-- [] Part 10 (in progress)
-- [] Part 11
-- [] Part 12
+- [x] Part 10 
+- [x] Part 11
+- [] Part 12 (in progress)
 - [] Part 13
 - [] Part 14
