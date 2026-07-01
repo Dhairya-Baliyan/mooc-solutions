@@ -14,6 +14,6 @@ My solutions to the University of Helsinki Python Programming exercises.
 - [x] Part 9
 - [x] Part 10 
 - [x] Part 11
-- [] Part 12 (in progress)
-- [] Part 13
+- [x] Part 12 
+- [] Part 13 (pygame project)
 - [] Part 14
